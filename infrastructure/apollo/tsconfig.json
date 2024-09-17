@@ -1,12 +1,23 @@
 {
   "compilerOptions": {
-    "rootDirs": ["src"],
     "outDir": "dist",
-    "lib": ["es2020"],
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "types": ["node"]
-  }
+    "target": "es2019",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "lib": ["es2019"],
+    "paths": {
+      "src/*": ["./src/*"],
+      "lib/*": ["./lib/*"],
+      "tests/*": ["./tests/*"]
+    }
+  },
+  "include": ["src/**/*"]
 }

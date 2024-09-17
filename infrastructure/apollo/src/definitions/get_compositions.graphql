@@ -1,0 +1,8 @@
+type Composition {
+    title: String
+    id: String
+}
+
+type Query {
+    compositions: [Composition]
+}
