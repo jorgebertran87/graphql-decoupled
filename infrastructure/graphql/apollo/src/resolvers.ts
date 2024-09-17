@@ -11,11 +11,9 @@ const compositions = [
 
 export const resolvers = {
     Query: {
-        compositions: () => compositions,
+        compositions: () => compositions
     },
     Mutation: {
-        createComposition: (_source: any, args: any) => {
-            return args.input
-        }
+        createComposition: (_source: any, args: any) => args.input
     }
 }
