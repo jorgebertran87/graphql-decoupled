@@ -1,0 +1,23 @@
+{
+  "name": "graphql_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "start": "yarn compile && yarn definitions:load && ./node_modules/.bin/ts-node -r tsconfig-paths/register ./index.ts",
+    "definitions:load": "rm -rf definitions && ln -s ../definitions definitions"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "glob": "^11.0.0",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.2"
+  }
+}

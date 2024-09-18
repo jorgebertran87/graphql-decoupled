@@ -4,7 +4,7 @@ import {glob} from "glob";
 
 
 const loadTypeDefs = (): string => {
-    const files = glob.sync("src/definitions/**/*.graphql")
+    const files = glob.sync("definitions/**/*.graphql")
 
     let typeDefs = ""
 

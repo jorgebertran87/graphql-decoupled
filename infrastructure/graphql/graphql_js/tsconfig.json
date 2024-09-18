@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "target": "es2019",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "lib": ["es2019"],
+    "paths": {
+      "domain/*": ["../../../domain/*"],
+      "infrastructure/*":["../../../infrastructure/*"],
+      "root/*": ["../../../*"]
+    }
+  }
+}
