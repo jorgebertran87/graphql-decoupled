@@ -9,12 +9,13 @@
     "definitions:load": "rm -rf definitions && ln -s ../definitions definitions"
   },
   "dependencies": {
-    "@apollo/server": "^4.11.0",
+    "express": "^4.21.0",
     "glob": "^11.0.0",
     "graphql": "^16.9.0",
     "graphql-http": "^1.22.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^22.5.5",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
