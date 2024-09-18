@@ -1,0 +1,8 @@
+input StuffInput {
+    title: String!
+    id: String!
+}
+
+type Mutation {
+    createStuff(input: StuffInput!): Stuff
+}

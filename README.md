@@ -2,7 +2,7 @@
 ### This repo shows how to decouple business logic from infrastructure
 
 - We have two folders: Domain (business logic) and Infrastructure (graphql - apollo, repositories, datadog, etc)
-- Into the Domain folder we have our Application Services (CreateComposition, GetAllCompositions, etc)
+- Into the Domain folder we have our Application Services (CreateStuff, GetAllStuff, etc)
 - This logic is called as resolvers from Apollo Server
 
 ### What do we achieve with this?

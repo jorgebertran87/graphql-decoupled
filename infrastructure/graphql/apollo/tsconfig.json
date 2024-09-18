@@ -16,7 +16,8 @@
     "paths": {
       "src/*": ["./src/*"],
       "domain/*": ["../../../domain/*"],
-      "infrastructure/*":["../../../infrastructure/*"]
+      "infrastructure/*":["../../../infrastructure/*"],
+      "root/*": ["../../../*"]
     }
   }
 }

@@ -1,8 +1,0 @@
-input CompositionInput {
-    title: String!
-    id: String!
-}
-
-type Mutation {
-    createComposition(input: CompositionInput!): Composition
-}

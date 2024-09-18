@@ -1,0 +1,8 @@
+type Stuff {
+    title: String
+    id: String
+}
+
+type Query {
+    stuff: [Stuff]
+}

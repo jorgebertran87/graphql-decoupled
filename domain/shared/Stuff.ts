@@ -1,4 +1,4 @@
-export class Composition {
+export class Stuff {
     constructor(private readonly _id: number, private readonly _title: string) {
     }
 

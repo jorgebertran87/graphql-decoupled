@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && npm run definitions:load && ./node_modules/.bin/ts-node -r tsconfig-paths/register ./src/index.ts",
+    "start": "yarn compile && yarn definitions:load && ./node_modules/.bin/ts-node -r tsconfig-paths/register ./src/index.ts",
     "definitions:load": "rm -rf src/definitions && ln -s ../../definitions src/definitions"
   },
   "keywords": [],
