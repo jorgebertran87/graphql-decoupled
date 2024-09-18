@@ -1,19 +1,14 @@
-const compositions = [
-    {
-        title: 'The Awakening',
-        id: 'Kate Chopin',
-    },
-    {
-        title: 'City of Glass',
-        id: 'Paul Auster',
-    },
-];
+import {GetAllCompositions} from "domain/GetAllCompositions";
+import {InMemoryCompositionsRepository} from "infrastructure/shared/InMemoryCompositionsRepository";
+import {CreateComposition} from "domain/CreateComposition";
+
+const compositionsRepository = InMemoryCompositionsRepository;
 
 export const resolvers = {
     Query: {
-        compositions: () => compositions
+        compositions: () => (new GetAllCompositions(new compositionsRepository())).run()
     },
     Mutation: {
-        createComposition: (_source: any, args: any) => args.input
+        createComposition: (_source: any, args: any) => (new CreateComposition(new compositionsRepository())).run(args.input.id, args.input.title)
     }
 }
